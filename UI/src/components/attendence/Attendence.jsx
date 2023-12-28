@@ -27,7 +27,9 @@ const Attendence = () => {
   return (
     <div>
       <Header currentDate={currentDate} onPrevMonth={handlePrevMonth} onNextMonth={handleNextMonth} />
-      
+      <div style={{display:'flex'}}>
+    
+      </div>
       <AttendanceTable dates={dates} students={students} markAttendance={markAttendance} />
     </div>
   );

@@ -5,10 +5,10 @@ import { format } from 'date-fns';
 
 const Header = ({ currentDate, onPrevMonth, onNextMonth }) => {
   return (
-    <div>
-      <button onClick={onPrevMonth}>&lt;</button>
+    <div style={{display:'flex',justifyContent:'center'}}>
+      <button onClick={onPrevMonth} style={{backgroundColor:"blueviolet",borderRadius:'2px'}}>&lt;</button>
       <span>{format(currentDate, 'MMMM yyyy')}</span>
-      <button onClick={onNextMonth}>&gt;</button>
+      <button onClick={onNextMonth}  style={{backgroundColor:"blueviolet",borderRadius:'2px'}}>&gt;</button>
     </div>
   );
 };
